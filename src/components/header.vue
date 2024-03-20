@@ -2,7 +2,7 @@
   <header class="flex container justify-between mx-auto my-9 items-center px-5">
     <!-- Logo -->
     <div class="flex justify-center py-5">
-      <img class="text-center" src="../assets/logo.png" alt="" />
+      <img class="cursor-pointer" src="../assets/logo.png" alt="" />
     </div>
 
     <!-- Menu -->
