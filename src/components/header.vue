@@ -1,8 +1,8 @@
 <template>
-  <header class="flex container justify-between mx-auto my-9 items-center px-5">
+  <header class="flex container justify-between mx-auto my-8 items-center px-5">
     <!-- Logo -->
     <div class="flex justify-center py-5">
-      <img class="cursor-pointer" src="../assets/logo.png" alt="" />
+      <img class="cursor-pointer" src="../assets/images/logo.png" alt="" />
     </div>
 
     <!-- Menu -->
@@ -18,13 +18,12 @@
 
     <!-- Actions -->
     <div class="flex sm:gap-5 gap-2">
-      <ButtonOrange text="Sign in" />
-      <ButtonBlue text="Get Started" />
+      <Button varient="blue" text="Sign in" />
+      <Button varient="orange" text="Get Started" />
     </div>
   </header>
 </template>
 
 <script setup>
-import ButtonOrange from "./btn-orange.vue";
-import ButtonBlue from "./btn-blue.vue";
+import Button from "./button.vue";
 </script>
