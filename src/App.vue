@@ -1,7 +1,9 @@
 <template>
-  <Header />
-  <Hero />
-  <Client />
+  <div>
+    <Header />
+    <Hero />
+    <Client />
+  </div>
 </template>
 
 <script setup>

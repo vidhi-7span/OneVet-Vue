@@ -45,7 +45,7 @@
 
       <!-- Hero Image -->
       <div class="hero-image lg:w-3/5 w-full lg:order-none order-1">
-        <img class="-mb-20" src="../assets/images/hero.png" alt="" />
+        <img class="-mb-20" src="@/assets/images/hero.png" alt="" />
       </div>
     </div>
   </div>
