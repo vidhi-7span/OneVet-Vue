@@ -64,7 +64,7 @@ import Button from "./button.vue";
 
 <style scoped>
 .vector::before {
-  @apply absolute -bottom-2 w-full bg-no-repeat bg-cover pb-3;
+  @apply absolute -bottom-2 w-full bg-no-repeat bg-contain pb-3;
   content: "";
   background-image: url(../assets/images/vector.png);
 }

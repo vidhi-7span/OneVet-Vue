@@ -1,6 +1,6 @@
 <template>
   <header
-    class="flex container justify-between mx-auto lg:my-8 items-center px-5"
+    class="flex container justify-between mx-auto lg:py-8 items-center px-5"
   >
     <!-- Logo -->
     <div class="flex justify-center py-5">
