@@ -1,15 +1,20 @@
 <template>
   <div class="bg-sky-100 relative z-20">
     <!-- Hero Wrapper -->
-    <div class="flex flex-wrap justify-center items-center mx-auto pt-6 px-5">
+    <div
+      class="flex container flex-wrap justify-center items-center mx-auto pt-6 px-5"
+    >
       <!-- Hero Content -->
       <div class="lg:w-2/5 w-full lg:order-none order-2 mt-28">
         <!-- Title -->
-        <p
-          class="font-extrabold md:text-6xl text-4xl pb-9 text-sky-950 font-sans lg:w-96"
-        >
-          Connect with Your Vet Anytime
-        </p>
+        <div class="flex">
+          <p
+            class="font-extrabold md:text-6xl text-4xl pb-9 text-sky-950 font-sans lg:w-96"
+          >
+            Connect with Your Vet
+            <span class="vector relative inline-block">Anytime</span>
+          </p>
+        </div>
 
         <!-- Description -->
         <p class="leading-loose text-lg font-serif text-sky-950">
@@ -56,3 +61,11 @@
 <script setup>
 import Button from "./button.vue";
 </script>
+
+<style scoped>
+.vector::before {
+  @apply absolute -bottom-2 w-full bg-no-repeat bg-cover pb-3;
+  content: "";
+  background-image: url(../assets/images/vector.png);
+}
+</style>

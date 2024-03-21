@@ -1,5 +1,7 @@
 <template>
-  <header class="flex container justify-between mx-auto my-8 items-center px-5">
+  <header
+    class="flex container justify-between mx-auto lg:my-8 items-center px-5"
+  >
     <!-- Logo -->
     <div class="flex justify-center py-5">
       <img class="cursor-pointer" src="../assets/images/logo.png" alt="" />
@@ -8,7 +10,7 @@
     <!-- Menu -->
     <div>
       <ul
-        class="gap-4 font-black cursor-pointer font-serif md:text-xl text-lg text-center items-center justify-center mx-auto hidden lg:flex"
+        class="lg:gap-8 font-black cursor-pointer font-serif md:text-xl text-lg text-center items-center justify-center mx-auto hidden xl:flex"
       >
         <li class="hover:text-orange-400">About Us</li>
         <li class="hover:text-orange-400">Emergency Fund</li>

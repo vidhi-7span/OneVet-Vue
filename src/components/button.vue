@@ -1,7 +1,7 @@
 <template>
   <div>
     <button
-      class="sm:px-10 sm:py-3 px-6 py-3 font-black rounded-full font-serif sm:text-xl"
+      class="sm:px-10 sm:py-3 px-4 py-2 font-black rounded-full font-serif md:text-xl text-sm"
       :class="getVarientClasses"
     >
       {{ text }}
