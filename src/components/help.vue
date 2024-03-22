@@ -3,21 +3,25 @@
     <!-- Help Section -->
     <div class="bg-sky-950">
       <div
-        class="container mx-auto px-5 text-center mt-40 pt-6 text-white font-extrabold md:text-6xl text-4xl pb-9 font-sans"
+        class="container mx-auto px-5 text-center mt-40 pt-6 text-white font-extrabold md:text-4xl lg:text-6xl text-xl pb-9 font-sans"
       >
         No Matter Your Pets Problem - <br />
         We're Here To
         <span class="vector relative inline-block"> Help!</span>
       </div>
 
-      <div class="grid grid-cols-4 gap-16 container px-5 mx-auto py-24">
+      <div
+        class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:gap-16 md:gap-12 gap-10 flex-wrapgap-16 container px-5 mx-auto md:py-24"
+      >
         <div
           v-for="(item, i) in Items"
           :key="i"
           class="flex items-center flex-col"
         >
           <img :src="`/images/help${item.index}.png`" alt="Help Image" />
-          <P class="text-white text-2xl font-serif w-40 text-center">
+          <P
+            class="text-white md:text-2xl font-serif md:w-40 w-32 text-center mt-6"
+          >
             {{ item.title }}
           </P>
         </div>
@@ -41,7 +45,7 @@ const Items = [
 
 <style scoped>
 .vector::before {
-  @apply absolute -bottom-8 w-full bg-no-repeat bg-contain pb-3;
+  @apply absolute md:-bottom-8 -bottom-4 w-full bg-no-repeat bg-contain pb-3;
   content: "";
   background-image: url(../assets/images/vector.png);
 }
