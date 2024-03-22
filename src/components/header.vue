@@ -12,9 +12,13 @@
       <ul
         class="lg:gap-8 font-black cursor-pointer font-serif md:text-xl text-lg text-center items-center justify-center mx-auto hidden xl:flex"
       >
-        <li class="hover:text-orange-400">About Us</li>
-        <li class="hover:text-orange-400">Emergency Fund</li>
-        <li class="hover:text-orange-400">Contact Us</li>
+        <li
+          class="hover:text-orange-400"
+          v-for="(item, i) in navItems"
+          :key="i"
+        >
+          {{ item.name }}
+        </li>
       </ul>
     </div>
 
@@ -27,5 +31,10 @@
 </template>
 
 <script setup>
-import Button from "./button.vue";
+import Button from "./Button.vue";
+const navItems = [
+  { index: 1, name: "About Us" },
+  { index: 2, name: "Emergency Fund" },
+  { index: 3, name: "Contact Us" },
+];
 </script>

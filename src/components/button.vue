@@ -13,7 +13,10 @@
 import { computed } from "vue";
 
 const props = defineProps({
-  text: String,
+  text: {
+    type: String,
+    default: "Title",
+  },
   varient: {
     type: String,
     default: "default",
