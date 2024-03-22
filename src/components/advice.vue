@@ -1,7 +1,7 @@
 <template>
   <section>
     <!-- Advice Section -->
-    <div class="container px-5 text-center mt-28 mx-auto">
+    <div class="container px-5 text-center py-28 mx-auto">
       <p class="font-extrabold md:text-6xl text-4xl text-sky-950 font-sans">
         Need
         <span class="vector relative inline-block">General Pet</span> Advice?

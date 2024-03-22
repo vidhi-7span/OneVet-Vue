@@ -1,9 +1,9 @@
 <template>
   <section>
     <!-- Help Section -->
-    <div class="bg-sky-950">
+    <div class="relative vector-before bg-sky-950">
       <div
-        class="container mx-auto px-5 text-center mt-40 pt-6 text-white font-extrabold md:text-4xl lg:text-6xl text-xl pb-9 font-sans"
+        class="container mx-auto px-5 text-center mt-40 pt-10 text-white font-extrabold md:text-4xl lg:text-6xl text-xl pb-9 font-sans"
       >
         No Matter Your Pets Problem - <br />
         We're Here To
@@ -45,8 +45,14 @@ const Items = [
 
 <style scoped>
 .vector::before {
-  @apply absolute md:-bottom-8 -bottom-4 w-full bg-no-repeat bg-contain pb-3;
+  @apply absolute lg:-bottom-8  md:-bottom-5 -bottom-4 w-full bg-no-repeat bg-contain pb-3;
   content: "";
   background-image: url(../assets/images/vector.png);
+}
+
+.vector-before::before {
+  @apply absolute w-full h-2/4 bg-no-repeat bg-contain lg:-top-20 md:-top-10 -top-3;
+  content: "";
+  background-image: url(../assets/images/help-before.png);
 }
 </style>
