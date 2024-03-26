@@ -30,10 +30,15 @@
         </P>
       </div>
     </div>
+
+    <div class="mt-28 text-center">
+      <Button varient="orange" text="Get Started" />
+    </div>
   </section>
 </template>
 
 <script setup>
+import Button from "./Button.vue";
 const Items = [
   {
     index: 1,
@@ -52,6 +57,7 @@ const Items = [
   },
 ];
 </script>
+
 <style scoped>
 .vector::before {
   @apply absolute md:-bottom-16 -bottom-11 w-full bg-no-repeat bg-contain h-full;
