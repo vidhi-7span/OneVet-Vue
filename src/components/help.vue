@@ -3,7 +3,7 @@
     <!-- Help Section -->
     <div class="relative vector-before bg-sky-950">
       <div
-        class="container mx-auto px-5 text-center mt-40 pt-10 text-white font-extrabold md:text-4xl lg:text-6xl text-xl pb-9 font-sans"
+        class="container mx-auto px-5 text-center mt-8 py-10 text-white font-extrabold lg:text-6xl md:text-4xl text-2xl pb-9 font-sans"
       >
         No Matter Your Pets Problem - <br />
         We're Here To
@@ -11,7 +11,7 @@
       </div>
 
       <div
-        class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:gap-16 md:gap-12 gap-10 flex-wrapgap-16 container px-5 mx-auto md:py-24"
+        class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:gap-16 md:gap-12 gap-10 flex-wrapgap-16 container px-5 py-10 mx-auto md:pb-44 md:pt-24"
       >
         <div
           v-for="(item, i) in Items"
@@ -51,7 +51,7 @@ const Items = [
 }
 
 .vector-before::before {
-  @apply absolute w-full h-2/4 bg-no-repeat bg-contain lg:-top-20 md:-top-10 -top-3;
+  @apply absolute w-full h-2/4 bg-no-repeat bg-contain lg:-top-12 md:-top-10 -top-3;
   content: "";
   background-image: url(../assets/images/help-before.png);
 }

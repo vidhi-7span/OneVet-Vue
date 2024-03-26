@@ -53,7 +53,7 @@
     <div
       class="after-img absolute w-auto left-0 right-0 z-10 -mt-16 bg-no-repeat"
     >
-      <img src="../assets/images/hero-after.png" class="h-32" alt="" />
+      <img src="../assets/images/hero-after.png" class="h-32 w-full" alt="" />
     </div>
   </section>
 </template>

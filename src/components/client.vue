@@ -1,7 +1,7 @@
 <template>
   <section>
     <!-- Client Section -->
-    <div class="container mx-auto mt-24 px-5">
+    <div class="container mx-auto mt-28 px-5">
       <p class="text-center font-bold text-sky-950">As Seen On</p>
     </div>
     <div class="container mx-auto px-5">
