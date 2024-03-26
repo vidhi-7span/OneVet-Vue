@@ -1,7 +1,7 @@
 <template>
   <section>
     <!-- Instant Access Section -->
-    <div class="bg-[#FFEADE] vector-before relative">
+    <div class="bg-[#FFEADE] vector-before relative z-20">
       <div class="container px-5 mx-auto text-center py-20">
         <p
           class="font-extrabold text-sky-950 font-sans lg:text-6xl md:text-4xl text-3xl"
@@ -16,9 +16,13 @@
       </div>
 
       <div
-        class="container px-5 mx-auto md:py-24 grid md:grid-cols-2 grid-cols-1 lg:gap-28 md:gap-9 gap-8 justify-center"
+        class="container px-5 mx-auto md:pt-24 grid md:grid-cols-2 grid-cols-1 lg:gap-28 md:gap-9 gap-8 justify- relative z-10"
       >
-        <Card title="Traditional Vet Visit" url="/images/card1.png">
+        <Card
+          title="Traditional Vet Visit"
+          url="/images/card1.png "
+          class="z-20"
+        >
           <template #action>
             <div></div>
           </template>
@@ -29,6 +33,18 @@
           button="Get Started"
         />
       </div>
+    </div>
+    <div class="flex justify-center md:-mt-32 -mt-12 bg-[#FFEADE] md:flex">
+      <img src="../assets/images/cat.png" alt="" class="z-20" />
+    </div>
+  </section>
+
+  <section>
+    <!-- After Image -->
+    <div
+      class="after-img absolute w-auto left-0 right-0 z-10 -mt-16 bg-no-repeat"
+    >
+      <img src="../assets/images/access-after.png" class="h-32 w-full" alt="" />
     </div>
   </section>
 </template>
