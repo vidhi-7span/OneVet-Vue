@@ -6,8 +6,7 @@
     <!-- <Advice /> -->
     <Help />
     <InstantAccess />
-
-    <!-- <Membership /> -->
+    <Membership />
   </div>
 </template>
 
@@ -17,6 +16,6 @@ import Header from "./components/header.vue";
 import Hero from "./components/hero.vue";
 // import Advice from "./components/advice.vue";
 import Help from "./components/help.vue";
-// import Membership from "./components/membership.vue";
+import Membership from "./components/membership.vue";
 import InstantAccess from "./components/instantAccess.vue";
 </script>
