@@ -7,6 +7,7 @@
     <Help />
     <InstantAccess />
     <Membership />
+    <Fund />
   </div>
 </template>
 
@@ -18,4 +19,5 @@ import Hero from "./components/hero.vue";
 import Help from "./components/help.vue";
 import Membership from "./components/membership.vue";
 import InstantAccess from "./components/instantAccess.vue";
+import Fund from "./components/fund.vue";
 </script>
