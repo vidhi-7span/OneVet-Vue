@@ -8,6 +8,7 @@
     <InstantAccess />
     <Membership />
     <Fund />
+    <Footer />
   </div>
 </template>
 
@@ -20,4 +21,5 @@ import Help from "./components/help.vue";
 import Membership from "./components/membership.vue";
 import InstantAccess from "./components/instantAccess.vue";
 import Fund from "./components/fund.vue";
+import Footer from "./components/footer.vue";
 </script>

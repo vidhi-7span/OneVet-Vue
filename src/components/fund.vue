@@ -40,7 +40,7 @@ import Button from "./Button.vue";
 }
 
 .vector-after::after {
-  @apply absolute w-full h-1/4 bg-no-repeat bg-contain -mt-2;
+  @apply absolute w-full h-1/4 bg-no-repeat bg-contain md:-mt-3 -mt-2;
   content: "";
   background-image: url(../assets/images/fund-after.png);
 }
