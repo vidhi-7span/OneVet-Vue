@@ -9,6 +9,7 @@
     <Membership />
     <Fund />
     <Footer />
+    <Copyright />
   </div>
 </template>
 
@@ -22,4 +23,5 @@ import Membership from "./components/membership.vue";
 import InstantAccess from "./components/instantAccess.vue";
 import Fund from "./components/fund.vue";
 import Footer from "./components/footer.vue";
+import Copyright from "./components/copyright.vue";
 </script>

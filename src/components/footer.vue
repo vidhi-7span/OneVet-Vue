@@ -4,8 +4,8 @@
       <div class="flex justify-center">
         <img src="../assets/images/dark-logo.png" alt="" />
       </div>
-      <div class="flex flex-wrap justify-evenly my-24">
-        <div>
+      <div class="lg:flex justify-evenly mb-24">
+        <div class="mt-8">
           <p class="mb-7 text-xl font-semibold text-sky-950 font-serif">
             Follow Us
           </p>
@@ -14,7 +14,7 @@
             <img src="../assets/images/twitter.png" alt="twitter" />
           </div>
         </div>
-        <div>
+        <div class="mt-8">
           <p class="mb-7 text-xl font-semibold text-sky-950 font-serif">
             Web Links
           </p>
@@ -28,7 +28,7 @@
             <a class="hover:text-orange-600" href="/">Contact Us</a>
           </div>
         </div>
-        <div>
+        <div class="mt-8">
           <p class="mb-7 text-xl font-semibold text-sky-950 font-serif">
             Contact Details
           </p>
@@ -53,17 +53,17 @@
             </div>
           </div>
         </div>
-        <div>
+        <div class="mt-8">
           <p class="mb-7 text-xl font-semibold text-sky-950 font-serif">
             SubscribeNow
           </p>
-          <div class="flex gap-3 flex-col w-full">
+          <div class="flex gap-3 flex-col">
             <input
               type="text"
               placeholder="Enter Email Address"
-              class="py-3 pl-7 text-sky-950 border-2 rounded-full border-sky-950 placeholder-sky-950 placeholder:font-serif placeholder:font-black w-full"
+              class="py-3 pl-7 text-sky-950 border-2 rounded-full border-sky-950 placeholder-sky-950 placeholder:font-serif placeholder:font-black"
             />
-            <Button text="Subscribe Now" varient="orange" />
+            <Button text="Subscribe Now" varient="orange" class="w-full" />
           </div>
         </div>
       </div>
