@@ -4,7 +4,9 @@
       <div class="flex justify-center">
         <img src="../assets/images/dark-logo.png" alt="" />
       </div>
-      <div class="lg:flex justify-evenly mb-24">
+      <div
+        class="grid md:grid-cols-4 sm:grid-cols-2 lg:flex justify-evenly mb-24"
+      >
         <div class="mt-8">
           <p class="mb-7 text-xl font-semibold text-sky-950 font-serif">
             Follow Us
