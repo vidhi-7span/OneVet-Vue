@@ -1,6 +1,5 @@
 <template>
   <div>
-    <Slider />
     <Header />
     <Hero />
     <Client />
@@ -9,6 +8,7 @@
     <InstantAccess />
     <Membership />
     <Fund />
+    <Slider />
     <Footer />
     <Copyright />
   </div>

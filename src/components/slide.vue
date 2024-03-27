@@ -1,11 +1,13 @@
 <template>
   <div
-    class="bg-[#FFF1EA] py-14 px-12 rounded-b-[85px] rounded-tr-[85px] w-[400px] text-center mt-32 mb-20"
+    class="bg-[#FFF1EA] mt-32 mb-20 lg:mx-10 sm:mx-1 lg:py-14 sm:py-6 lg:px-8 sm:px-6 lg:rounded-b-[85px] sm:rounded-b-3xl lg:rounded-tr-[85px] sm:rounded-tr-3xl w-[400px] text-center"
   >
     <div class="flex justify-center">
       <img src="../assets/images/notation.png" alt="" />
     </div>
-    <p class="mt-11 mb-5 font-semibold text-sky-950 text-2xl font-serif">
+    <p
+      class="lg:mt-11 sm:mt-5 lg:mb-5 sm:mb-3 font-semibold text-sky-950 lg:text-2xl sm:text-xs font-serif"
+    >
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad quis
       nostrud exercitation
