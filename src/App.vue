@@ -9,6 +9,7 @@
     <Membership />
     <Fund />
     <Slider />
+    <Faq />
     <Footer />
     <Copyright />
   </div>
@@ -26,4 +27,5 @@ import Fund from "./components/fund.vue";
 import Footer from "./components/footer.vue";
 import Copyright from "./components/copyright.vue";
 import Slider from "./components/slider.vue";
+import Faq from "./components/faq.vue";
 </script>

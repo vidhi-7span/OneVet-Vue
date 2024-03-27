@@ -1,7 +1,7 @@
 <template>
-  <footer class="mt-28">
+  <footer class="md:mt-36">
     <div class="container px-5 mx-auto">
-      <div class="flex justify-center mb-14">
+      <div class="flex justify-center my-14">
         <img src="../assets/images/dark-logo.png" alt="" />
       </div>
       <div
