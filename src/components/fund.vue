@@ -1,7 +1,7 @@
 <template>
   <section>
     <!-- Fund Section -->
-    <div class="relative vector-before bg-sky-950">
+    <div class="relative vector-before vector-after bg-sky-950">
       <div class="container mx-auto px-5 text-center text-white py-8">
         <div
           class="md:mt-1 mt-0 md:py-6 py-2 font-extrabold lg:text-6xl md:text-4xl text-2xl pb-9 font-sans"
@@ -16,7 +16,7 @@
             minim veniam.
           </p>
 
-          <Button text="Learn More" varient="orange" />
+          <Button text="Learn More" varient="orange" class="mb-4" />
         </div>
       </div>
     </div>
@@ -37,5 +37,11 @@ import Button from "./Button.vue";
   @apply absolute w-full h-2/4 bg-no-repeat bg-contain lg:-top-12 md:-top-10 -top-3;
   content: "";
   background-image: url(../assets/images/help-before.png);
+}
+
+.vector-after::after {
+  @apply absolute w-full h-1/4 bg-no-repeat bg-contain -mt-2;
+  content: "";
+  background-image: url(../assets/images/fund-after.png);
 }
 </style>
