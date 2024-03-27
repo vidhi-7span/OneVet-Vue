@@ -3,7 +3,7 @@
     <!-- Help Section -->
     <div class="relative vector-before bg-sky-950">
       <div
-        class="container mx-auto px-5 text-center mt-8 py-10 text-white font-extrabold lg:text-6xl md:text-4xl text-2xl pb-9 font-sans"
+        class="container mx-auto px-5 text-center mt-8 py-24 text-white font-extrabold lg:text-6xl md:text-4xl text-2xl pb-9 font-sans"
       >
         No Matter Your Pets Problem - <br />
         We're Here To

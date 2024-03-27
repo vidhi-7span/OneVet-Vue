@@ -31,7 +31,7 @@
       </div>
     </div>
 
-    <div class="my-28 text-center">
+    <div class="sm:my-28 mt-24 mb-14 text-center">
       <Button varient="orange" text="Get Started" />
     </div>
   </section>
