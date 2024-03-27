@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Slider />
     <Header />
     <Hero />
     <Client />
@@ -24,4 +25,5 @@ import InstantAccess from "./components/instantAccess.vue";
 import Fund from "./components/fund.vue";
 import Footer from "./components/footer.vue";
 import Copyright from "./components/copyright.vue";
+import Slider from "./components/slider.vue";
 </script>
