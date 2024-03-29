@@ -22,12 +22,12 @@
         class="flex items-start flex-col bg-sky-100 hover:bg-sky-950 hover:transition-all text-sky-950 hover:text-white lg:p-14 p-7 lg:rounded-b-[82px] lg:rounded-tr-[82px] rounded-b-3xl rounded-tr-3xl"
       >
         <img :src="`/images/perk${item.index}.png`" alt="Perks Image" />
-        <P class="md:text-2xl font-serif font-bold mt-8">
+        <p class="md:text-2xl font-serif font-bold mt-8">
           {{ item.title }}
-        </P>
-        <P class="font-serif mt-6">
+        </p>
+        <p class="font-serif mt-6">
           {{ item.desc }}
-        </P>
+        </p>
       </div>
     </div>
 

@@ -12,8 +12,17 @@
             Follow Us
           </p>
           <div class="flex gap-3">
-            <img src="../assets/images/facebook.png" alt="facebook" />
-            <img src="../assets/images/twitter.png" alt="twitter" />
+            <img
+              src="../assets/images/facebook.png"
+              class="cursor-pointer"
+              alt="facebook"
+              path="https://vuejs.org/about/faq"
+            />
+            <img
+              class="cursor-pointer"
+              src="../assets/images/twitter.png"
+              alt="twitter"
+            />
           </div>
         </div>
         <div class="mt-8">

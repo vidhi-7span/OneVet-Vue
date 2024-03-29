@@ -10,7 +10,7 @@
       from our Members
     </p>
   </div>
-  <Carousel :itemsToShow="4" :wrapAround="true" :transition="500">
+  <Carousel :itemsToShow="4" :wrapAround="true" :transition="500" class="pb-14">
     <Slide v-for="slide in 10" :key="slide" class="slide">
       <SlideBox />
     </Slide>

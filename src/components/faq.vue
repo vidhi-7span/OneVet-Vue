@@ -27,10 +27,8 @@
           </div>
         </div>
 
-        <!-- FAQ Image -->
-        <div class="lg:w-3/5 w-full lg:order-none order-1">
-          <img class="-mb-20" src="@/assets/images/faq.png" alt="" />
-        </div>
+        <!-- FAQ  -->
+        <div class="info lg:w-3/5 w-full lg:order-none order-1 z-20">vidhi</div>
       </div>
     </div>
   </section>

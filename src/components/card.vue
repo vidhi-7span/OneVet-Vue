@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white py-9 px-20 rounded-3xl flex-grow">
+  <div class="bg-white py-9 px-20 rounded-3xl">
     <p class="md:text-3xl text-xl font-bold text-sky-950 text-center">
       {{ title }}
     </p>
