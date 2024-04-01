@@ -1,6 +1,5 @@
 <template>
   <div>
-    <adviceCard />
     <Header />
     <Hero />
     <Client />
@@ -17,7 +16,6 @@
 </template>
 
 <script setup>
-import adviceCard from "./components/adviceCard.vue";
 import Client from "./components/client.vue";
 import Header from "./components/header.vue";
 import Hero from "./components/hero.vue";

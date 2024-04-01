@@ -2,12 +2,12 @@
   <section>
     <!--  Advice Card -->
     <div
-      class="container px-5 grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 md:gap-6 flex-wrap lg:gap-16 gap-6 mx-auto md:-my-10"
+      class="container px-5 grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 md:gap-6 flex-wrap lg:gap-16 gap-6 mx-auto md:-my-10 lg:mt-24 md:mt-16 mt-11 md:mb-16"
     >
       <div
         v-for="(item, i) in items"
         :key="i"
-        class="flex px-5 justify-between items-start flex-col bg-sky-100 hover:bg-sky-950 hover:transition-all text-sky-950 hover:text-white lg:p-9 p-5 lg:rounded-bl-3xl lg:rounded-t-3xl rounded-bl-3xl rounded-t-3xl lg:mt-40 md:mt-28 mt-11"
+        class="px-5 bg-sky-100 hover:bg-sky-950 hover:transition-all text-sky-950 hover:text-white lg:p-9 p-5 lg:rounded-bl-3xl lg:rounded-t-3xl rounded-bl-3xl rounded-t-3xl md:even:mt-36 items-start"
       >
         <img
           :src="`/images/tap${item.index}.png`"
@@ -17,7 +17,7 @@
         <p class="lg:text-2xl font-serif font-bold">
           {{ item.title }}
         </p>
-        <p class="font-serif mt-6 text-left">
+        <p class="font-serif mt-1">
           {{ item.desc }}
         </p>
       </div>
@@ -34,10 +34,6 @@ const { items } = defineProps({
 </script>
 
 <style scoped>
-.slide:nth-child(odd) {
-  margin-top: 100px;
-}
-
 .vector::before {
   @apply absolute md:-bottom-16 -bottom-11 w-full bg-no-repeat bg-contain h-full;
   content: "";

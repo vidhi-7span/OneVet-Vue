@@ -23,7 +23,7 @@
     </div>
 
     <!-- Actions -->
-    <div class="flex sm:gap-5 gap-2">
+    <div class="flex sm:gap-5 gap-1 text-xs">
       <Button varient="blue" text="Sign in" />
       <Button varient="orange" text="Get Started" />
     </div>

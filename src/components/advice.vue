@@ -1,7 +1,7 @@
 <template>
   <section>
     <!-- Advice Section -->
-    <div class="container px-5 text-center md:py-24 mx-auto">
+    <div class="container px-5 md:py-24 mx-auto">
       <div>
         <div class="flex justify-center">
           <button
@@ -54,18 +54,18 @@ const tabs = [
     items: [
       {
         index: 1,
-        title: "1. Login to your OneVet App 2",
-        desc: "Immediately chat with one of our licensed veterinary professionals about anything! No matter how serious or silly.",
+        title: "1. Lorem ipsum dolor sit amet",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.",
       },
       {
         index: 2,
-        title: "2. Chat from the comfort of your home 2",
-        desc: "Our team is here to help until you feel completely comfortable with the guidance our vets have provided.",
+        title: "2. Lorem ipsum dolor sit amet, consectetur",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.",
       },
       {
         index: 3,
-        title: "3. Get Back To Living 2",
-        desc: "By avoiding the hassle of a vet trip, and getting the answers you need, you get back to what's important, being happy healthy with your pet.",
+        title: "3. Lorem  consectetur adipiscing ",
+        desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.",
       },
     ],
   },

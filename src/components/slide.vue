@@ -1,8 +1,8 @@
 <template>
   <div
-    class="bg-[#FFF1EA] mt-32 mb-20 lg:mx-6 sm:mx-1 lg:py-12 sm:py-6 lg:px-8 sm:px-6 lg:rounded-b-[85px] sm:rounded-b-3xl lg:rounded-tr-[85px] sm:rounded-tr-3xl w-[400px] text-center"
+    class="bg-[#FFF1EA] md:mt-32 mt-10 md:mb-20 lg:mx-6 sm:mx-1 lg:py-12 sm:py-6 lg:px-8 sm:px-6 lg:rounded-b-[85px] sm:rounded-b-3xl lg:rounded-tr-[85px] sm:rounded-tr-3xl w-[400px] text-center"
   >
-    <div class="flex justify-center">
+    <div class="flex flex-wrap justify-center">
       <img src="../assets/images/notation.png" alt="" />
     </div>
     <p

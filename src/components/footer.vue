@@ -1,11 +1,11 @@
 <template>
   <footer class="md:mt-36">
     <div class="container px-5 mx-auto">
-      <div class="flex justify-center my-14">
+      <div class="flex flex-wrap justify-center mt-14 md:my-14 mb-4">
         <img src="../assets/images/dark-logo.png" alt="" />
       </div>
       <div
-        class="grid md:grid-cols-4 sm:grid-cols-2 lg:flex justify-evenly mb-24"
+        class="grid md:grid-cols-4 sm:grid-cols-2 lg:flex justify-evenly md:mb-24"
       >
         <div class="mt-8">
           <p class="mb-7 text-xl font-semibold text-sky-950 font-serif">

@@ -1,5 +1,5 @@
 <template>
-  <div class="container px-5 text-center pt-48 mx-auto">
+  <div class="container px-5 text-center md:pt-48 pt-20 mx-auto">
     <p
       class="font-extrabold text-sky-950 font-sans lg:text-6xl md:text-4xl text-3xl"
     >
@@ -10,7 +10,14 @@
       from our Members
     </p>
   </div>
-  <Carousel :itemsToShow="4" :wrapAround="true" :transition="500" class="pb-14">
+  <Carousel
+    :itemsToShow="4"
+    :wrapAround="true"
+    :transition="500"
+    :autoplay="2000"
+    :mouseDrag="true"
+    class="pb-14"
+  >
     <Slide v-for="slide in 10" :key="slide" class="slide">
       <SlideBox />
     </Slide>
@@ -20,6 +27,7 @@
 <script setup>
 import { Carousel, Slide } from "vue3-carousel";
 import SlideBox from "./slide.vue";
+
 import "vue3-carousel/dist/carousel.css";
 </script>
 

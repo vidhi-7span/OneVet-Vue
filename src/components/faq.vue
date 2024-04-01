@@ -6,7 +6,7 @@
         class="flex container flex-wrap justify-center items-center mx-auto pt-6 px-5"
       >
         <!-- FAQ Content -->
-        <div class="lg:w-2/5 w-full lg:order-none order-2 mt-28">
+        <div class="lg:w-2/5 w-full lg:order-none mt-28">
           <div class="hero-title flex">
             <p
               class="font-extrabold md:text-6xl text-4xl pb-9 text-sky-950 font-sans lg:w-96"
@@ -16,7 +16,7 @@
             </p>
           </div>
 
-          <p class="leading-loose text-lg font-serif text-sky-950">
+          <p class="leading-loose text-lg font-serif text-sky-950 w-[397px]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad
             minim veniam.
@@ -26,9 +26,35 @@
             <Button varient="orange" text="Ask Questions" />
           </div>
         </div>
-
         <!-- FAQ  -->
-        <div class="info lg:w-3/5 w-full lg:order-none order-1 z-20">vidhi</div>
+        <div class="info lg:w-3/5 w-full lg:order-none z-20">
+          <div id="accordion" class="accordion-container">
+            <div
+              v-for="(item, index) in items"
+              :key="index"
+              :class="['accordion', { 'is-open': isOpen === index }]"
+              class="bg-white my-7 py-6 px-9 rounded-3xl cursor-pointer"
+            >
+              <div
+                class="accordion-header flex gap-8"
+                @click="toggleAccordion(index)"
+              >
+                <img
+                  src="../assets/images/minus.svg"
+                  alt=""
+                  v-if="isOpen === index"
+                />
+                <img src="../assets/images/plus.svg" alt="" v-else />
+                <span class="font-semibold text-lg">{{ item.title }}</span>
+              </div>
+              <div class="accordion-body ml-12 mt-2">
+                <div class="accordion-content">
+                  {{ item.text }}
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -36,6 +62,44 @@
 
 <script setup>
 import Button from "./Button.vue";
+import { ref } from "vue";
+
+const items = ref([
+  {
+    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.",
+  },
+  {
+    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.",
+  },
+  {
+    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.",
+  },
+  {
+    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.",
+  },
+  {
+    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.",
+  },
+  {
+    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit?",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.",
+  },
+]);
+
+const isOpen = ref(null);
+
+const toggleAccordion = (index) => {
+  if (isOpen.value === index) {
+    isOpen.value = null;
+  } else {
+    isOpen.value = index;
+  }
+};
 </script>
 
 <style scoped>
@@ -55,5 +119,8 @@ import Button from "./Button.vue";
   @apply absolute w-full h-1/4 bg-no-repeat bg-contain md:-mt-4 -mt-2;
   content: "";
   background-image: url(../assets/images/hero-after.png);
+}
+.accordion:not(.is-open) .accordion-body {
+  display: none;
 }
 </style>
