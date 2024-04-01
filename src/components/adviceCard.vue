@@ -2,7 +2,7 @@
   <section>
     <!--  Advice Card -->
     <div
-      class="container px-5 grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 md:gap-6 flex-wrap lg:gap-16 gap-6 mx-auto md:-my-10 lg:mt-24 md:mt-16 mt-11 md:mb-16 items-start"
+      class="container px-5 grid lg:grid-cols-3 md:grid-cols-3 grid-cols-1 md:gap-6 flex-wrap lg:gap-16 gap-6 mx-auto md:-my-10 lg:mt-24 md:mt-16 mt-11 md:mb-16 items-start arrow-down relative"
     >
       <div
         v-for="(item, i) in items"
@@ -38,5 +38,11 @@ const { items } = defineProps({
   @apply absolute md:-bottom-16 -bottom-11 w-full bg-no-repeat bg-contain h-full;
   content: "";
   background-image: url(../assets/images/vector.png);
+}
+
+.arrow-down::after {
+  @apply absolute w-28 h-16 bg-no-repeat md:bottom-2 md:left-72 md:pl-80;
+  content: "";
+  background-image: url(../assets/images/arrow-down.png);
 }
 </style>
