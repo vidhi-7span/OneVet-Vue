@@ -1,7 +1,7 @@
 <template>
   <section>
     <!-- Advice Section -->
-    <div class="container px-5 md:py-24 mx-auto">
+    <div class="container px-5 lg:py-24 py-8 mx-auto">
       <div>
         <div class="flex justify-center">
           <button
