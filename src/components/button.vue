@@ -1,12 +1,10 @@
 <template>
-  <div>
-    <button
-      class="sm:px-10 sm:py-3 px-4 py-2 font-black rounded-full font-serif md:text-xl text-sm"
-      :class="getVarientClasses"
-    >
-      {{ text }}
-    </button>
-  </div>
+  <button
+    class="sm:px-10 sm:py-3 px-4 py-2 font-black rounded-full font-serif md:text-xl text-sm"
+    :class="getVarientClasses"
+  >
+    {{ text }}
+  </button>
 </template>
 
 <script setup>

@@ -2,28 +2,30 @@
   <section>
     <!-- Help Section -->
     <div class="relative vector-before bg-sky-950">
-      <div
-        class="container mx-auto px-5 text-center mt-8 py-24 text-white font-extrabold lg:text-6xl md:text-4xl text-2xl pb-9 font-sans"
-      >
-        No Matter Your Pets Problem - <br />
-        We're Here To
-        <span class="vector relative inline-block"> Help!</span>
-      </div>
-
-      <div
-        class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:gap-16 md:gap-12 gap-10 flex-wrapgap-16 container px-5 py-10 mx-auto md:pb-44 md:pt-24"
-      >
+      <div class="container mx-auto">
         <div
-          v-for="(item, i) in Items"
-          :key="i"
-          class="flex items-center flex-col"
+          class="px-5 text-center mt-8 py-24 text-white font-extrabold lg:text-6xl md:text-4xl text-2xl pb-9 font-sans"
         >
-          <img :src="`/images/help${item.index}.png`" alt="Help Image" />
-          <P
-            class="text-white md:text-2xl font-serif md:w-40 w-32 text-center mt-6"
+          No Matter Your Pets Problem - <br />
+          We're Here To
+          <span class="vector relative inline-block"> Help!</span>
+        </div>
+
+        <div
+          class="grid lg:grid-cols-4 md:grid-cols-3 grid-cols-2 lg:gap-16 md:gap-12 gap-10 flex-wrap px-5 mx-auto lg:pb-32 md:pb-14 pb-7 lg:pt-24 md:pt-10"
+        >
+          <div
+            v-for="(item, i) in Items"
+            :key="i"
+            class="flex items-center flex-col"
           >
-            {{ item.title }}
-          </P>
+            <img :src="`/images/help${item.index}.png`" alt="Help Image" />
+            <P
+              class="text-white md:text-2xl font-serif md:w-40 w-32 text-center mt-6"
+            >
+              {{ item.title }}
+            </P>
+          </div>
         </div>
       </div>
     </div>

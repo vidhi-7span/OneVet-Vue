@@ -9,7 +9,7 @@
             :key="index"
             @click="selectTab(tab.value)"
             :class="{ active: selectedTab === tab.value }"
-            class="font-extrabold text-gray-300 font-sans lg:text-4xl md:text-xl text-lg relative cursor-pointer py-2 px-8"
+            class="font-extrabold text-gray-300 font-sans lg:text-4xl md:text-xl relative cursor-pointer pb-2 md:px-8 px-5"
           >
             {{ tab.title }}
           </button>
@@ -64,7 +64,7 @@ const tabs = [
       },
       {
         index: 3,
-        title: "3. Lorem  consectetur adipiscing ",
+        title: "3. Lorem  consectetur  ",
         desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad minim veniam.",
       },
     ],
@@ -84,12 +84,12 @@ const selectTab = (val) => {
 
 <style scoped>
 button.active {
-  @apply font-extrabold text-sky-950 font-sans lg:text-4xl md:text-xl text-lg;
+  @apply font-extrabold text-sky-950 font-sans lg:text-4xl md:text-xl;
   font-weight: bold;
 }
 
 button.active::before {
-  @apply absolute -bottom-2 w-5/6 bg-no-repeat bg-contain pb-3 bg-center;
+  @apply absolute -bottom-2 md:w-5/6 w-2/4 bg-no-repeat bg-contain pb-3 bg-center;
   content: "";
   background-image: url(../assets/images/vector.png);
 }

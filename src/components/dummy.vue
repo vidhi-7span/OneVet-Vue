@@ -1,33 +1,14 @@
-<template>
-  <Carousel :settings="settings" :breakpoints="breakpoints">
-    <Slide v-for="slide in 10" :key="slide">
-      <div class="carousel__item">{{ slide }}</div>
-    </Slide>
+<!-- 
 
-    <template #addons>
-      <Navigation />
-    </template>
-  </Carousel>
-</template>
+=> Header - Done
+=> Hero Section - Done with Responsive
+=> Client Section - Done with Responsive
+=> Advice Section - Done with Responsive
+=> Help Section - Done with Responsive
+=> Access Section - Done with Responsive
+=> Fund Section - Done with Responsive
+=> Faq Section - Done with Responsive
+=> Footer Section - Done with Responsive
+=> Copyright Section - Done with Responsive
 
-<script setup>
-import { ref } from "vue";
-import { Carousel, Navigation, Slide } from "vue3-carousel";
-import "vue3-carousel/dist/carousel.css";
-
-const settings = ref({
-  itemsToShow: 1,
-  snapAlign: "center",
-});
-
-const breakpoints = ref({
-  700: {
-    itemsToShow: 3.5,
-    snapAlign: "center",
-  },
-  1024: {
-    itemsToShow: 5,
-    snapAlign: "start",
-  },
-});
-</script>
+-->

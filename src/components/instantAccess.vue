@@ -2,36 +2,38 @@
   <section>
     <!-- Instant Access Section -->
     <div class="bg-[#FFEADE] vector-before relative z-20">
-      <div class="container px-5 mx-auto text-center py-20">
-        <p
-          class="font-extrabold text-sky-950 font-sans lg:text-6xl md:text-4xl text-3xl"
-        >
-          Instant Access
-        </p>
-        <p
-          class="vector relative inline-block font-extrabold lg:text-6xl md:text-4xl text-3xl text-orange-400 font-sans"
-        >
-          No Wait. No Hassle.
-        </p>
-      </div>
+      <div class="container mx-auto">
+        <div class="px-5 text-center py-20">
+          <p
+            class="font-extrabold text-sky-950 font-sans lg:text-6xl md:text-4xl text-3xl"
+          >
+            Instant Access
+          </p>
+          <p
+            class="vector relative inline-block font-extrabold lg:text-6xl md:text-4xl text-3xl text-orange-400 font-sans"
+          >
+            No Wait. No Hassle.
+          </p>
+        </div>
 
-      <div
-        class="container px-5 mx-auto md:pt-24 grid md:grid-cols-2 grid-cols-1 lg:gap-28 md:gap-9 gap-8 justify- relative z-10"
-      >
-        <Card
-          title="Traditional Vet Visit"
-          url="/images/card1.png "
-          class="z-20"
+        <div
+          class="px-5 md:pt-10 grid md:grid-cols-2 grid-cols-1 lg:gap-28 md:gap-9 gap-8 justify- relative z-10"
         >
-          <template #action>
-            <div></div>
-          </template>
-        </Card>
-        <Card
-          title="With OneVet Mobile App"
-          url="/images/card2.png"
-          button="Get Started"
-        />
+          <Card
+            title="Traditional Vet Visit"
+            url="/images/card1.png "
+            class="z-20"
+          >
+            <template #action>
+              <div></div>
+            </template>
+          </Card>
+          <Card
+            title="With OneVet Mobile App"
+            url="/images/card2.png"
+            button="Get Started"
+          />
+        </div>
       </div>
     </div>
     <div class="flex justify-center md:-mt-32 -mt-12 bg-[#FFEADE] md:flex">

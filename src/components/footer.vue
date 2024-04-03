@@ -1,12 +1,10 @@
 <template>
-  <footer class="md:mt-36">
+  <footer class="lg:mt-36 md:mt-24">
     <div class="container px-5 mx-auto">
       <div class="flex flex-wrap justify-center mt-14 md:my-14 mb-4">
         <img src="../assets/images/dark-logo.png" alt="" />
       </div>
-      <div
-        class="grid md:grid-cols-4 sm:grid-cols-2 lg:flex justify-evenly md:mb-24"
-      >
+      <div class="grid lg:grid-cols-4 sm:grid-cols-2 lg:mb-24 md:mb-12 mb-6">
         <div class="mt-8">
           <p class="mb-7 text-xl font-semibold text-sky-950 font-serif">
             Follow Us
@@ -74,7 +72,7 @@
               placeholder="Enter Email Address"
               class="py-3 pl-7 text-sky-950 border-2 rounded-full border-sky-950 placeholder-sky-950 placeholder:font-serif placeholder:font-black"
             />
-            <Button text="Subscribe Now" varient="orange" class="w-full" />
+            <Button text="Subscribe Now" varient="orange" />
           </div>
         </div>
       </div>

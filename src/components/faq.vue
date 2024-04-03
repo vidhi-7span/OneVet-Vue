@@ -2,54 +2,57 @@
   <section>
     <!-- FAQ Section -->
     <div class="vector-before vector-after bg-sky-100 relative z-20">
-      <div
-        class="flex container flex-wrap justify-center items-center mx-auto pt-6 px-5"
-      >
-        <!-- FAQ Content -->
-        <div class="lg:w-2/5 w-full lg:order-none mt-28">
-          <div class="hero-title flex">
-            <p
-              class="font-extrabold md:text-6xl text-4xl pb-9 text-sky-950 font-sans lg:w-96"
-            >
-              Frequently Asked
-              <span class="vector relative inline-block">Questions</span>
-            </p>
-          </div>
-
-          <p class="leading-loose text-lg font-serif text-sky-950 w-[397px]">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad
-            minim veniam.
-          </p>
-
-          <div class="lg:mt-8 md:mt-5 mt-7 mb-4 flex items-center gap-6">
-            <Button varient="orange" text="Ask Questions" />
-          </div>
-        </div>
-        <!-- FAQ  -->
-        <div class="info lg:w-3/5 w-full lg:order-none z-20">
-          <div id="accordion" class="accordion-container">
-            <div
-              v-for="(item, index) in items"
-              :key="index"
-              :class="['accordion', { 'is-open': isOpen === index }]"
-              class="bg-white my-7 py-6 px-9 rounded-3xl cursor-pointer"
-            >
-              <div
-                class="accordion-header flex gap-8"
-                @click="toggleAccordion(index)"
+      <div class="container mx-auto">
+        <div class="grid lg:grid-cols-2 lg:gap-32 pt-6 px-5 frequent">
+          <!-- FAQ Content -->
+          <div class="lg:order-none lg:mt-28">
+            <div class="hero-title flex">
+              <p
+                class="font-extrabold md:text-6xl text-4xl pb-9 text-sky-950 font-sans lg:w-96"
               >
-                <img
-                  src="../assets/images/minus.svg"
-                  alt=""
-                  v-if="isOpen === index"
-                />
-                <img src="../assets/images/plus.svg" alt="" v-else />
-                <span class="font-semibold text-lg">{{ item.title }}</span>
-              </div>
-              <div class="accordion-body ml-12 mt-2">
-                <div class="accordion-content">
-                  {{ item.text }}
+                Frequently Asked
+                <span class="vector relative inline-block">Questions</span>
+              </p>
+            </div>
+
+            <p class="leading-loose text-lg font-serif text-sky-950">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliquat enim
+              ad minim veniam.
+            </p>
+
+            <div class="lg:mt-8 md:mt-1 mt-7 mb-4 flex items-center gap-6">
+              <Button varient="orange" text="Ask Questions" />
+            </div>
+          </div>
+
+          <!-- FAQ  -->
+          <div class="lg:order-none z-20">
+            <div id="accordion" class="accordion-container">
+              <div
+                v-for="(item, index) in items"
+                :key="index"
+                :class="['accordion', { 'is-open': isOpen === index }]"
+                class="bg-white md:my-7 my-5 md:py-6 py-4 md:px-9 px-5 rounded-3xl cursor-pointer"
+              >
+                <div
+                  class="accordion-header flex md:gap-8 gap-4"
+                  @click="toggleAccordion(index)"
+                >
+                  <img
+                    src="../assets/images/minus.svg"
+                    alt=""
+                    v-if="isOpen === index"
+                  />
+                  <img src="../assets/images/plus.svg" alt="" v-else />
+                  <span class="font-semibold md:text-lg text-sm">{{
+                    item.title
+                  }}</span>
+                </div>
+                <div class="accordion-body md:ml-12 ml-8 mt-2">
+                  <div class="accordion-content md:text-lg text-sm">
+                    {{ item.text }}
+                  </div>
                 </div>
               </div>
             </div>

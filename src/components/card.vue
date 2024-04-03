@@ -1,6 +1,6 @@
 <template>
-  <div class="bg-white py-9 px-20 rounded-3xl">
-    <p class="md:text-3xl text-xl font-bold text-sky-950 text-center">
+  <div class="bg-white lg:py-9 md:py-7 py-5 lg:px-20 md:px-10 px-5 rounded-3xl">
+    <p class="lg:text-3xl text-xl font-bold text-sky-950 text-center">
       {{ title }}
     </p>
     <div class="flex justify-center mt-16">

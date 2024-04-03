@@ -2,21 +2,23 @@
   <section>
     <!-- Fund Section -->
     <div class="relative vector-before vector-after bg-sky-950">
-      <div class="container mx-auto px-5 text-center text-white py-8">
-        <div
-          class="md:mt-1 mt-0 md:py-6 py-2 font-extrabold lg:text-6xl md:text-4xl text-2xl pb-9 font-sans"
-        >
-          Emergency
-          <span class="vector relative inline-block"> Fund</span>
-        </div>
-        <div>
-          <p class="md:pt-6 pb-8">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliquat enim ad
-            minim veniam.
-          </p>
+      <div class="container mx-auto">
+        <div class="px-5 text-center text-white py-8">
+          <div
+            class="md:mt-1 mt-0 md:py-6 py-2 font-extrabold lg:text-6xl md:text-4xl text-2xl pb-9 font-sans"
+          >
+            Emergency
+            <span class="vector relative inline-block"> Fund</span>
+          </div>
+          <div>
+            <p class="md:pt-6 pb-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliquat enim
+              ad minim veniam.
+            </p>
 
-          <Button text="Learn More" varient="orange" class="mb-4" />
+            <Button text="Learn More" varient="orange" class="mb-4" />
+          </div>
         </div>
       </div>
     </div>
